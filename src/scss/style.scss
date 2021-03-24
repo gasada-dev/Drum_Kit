@@ -26,15 +26,15 @@ body{
         text-shadow: 0 0 0.5rem black;
         transition: all 0.15s;
 
-        .playing{
-            border: 0.5rem solid rgba(0, 0, 0, 1);
+        &.playing{
+            border: 0.4rem solid rgba(190, 211, 7, 0.87);
             text-shadow: 0 0 0.7rem black;
             background: rgba(0,0,0,0.6);
             transform: scale(1.2);
         }
 
         &:hover{
-            border: 0.5rem solid rgba(0, 0, 0, 1);
+            border: 0.4rem solid rgba(190, 211, 7, 0.87);
             text-shadow: 0 0 0.7rem black;
             background: rgba(0,0,0,0.6);
             transform: scale(1.2);
@@ -47,7 +47,7 @@ body{
             font-weight: 500;
         }
 
-        .text{
+        .sound{
             color:rgb(255, 230, 0);
             font-size: 1rem;
 
