@@ -371,9 +371,10 @@ body {
 }
 
 .keys .key {
+  cursor: default;
   width: 7.5rem;
   height: 6rem;
-  border: 0.4rem solid rgba(0, 0, 0, 0.692);
+  border: 0.4rem solid rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,7 +389,25 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 0 .5rem black;
+  text-shadow: 0 0 0.5rem black;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.keys .key .playing {
+  border: 0.5rem solid black;
+  text-shadow: 0 0 0.7rem black;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.keys .key:hover {
+  border: 0.5rem solid black;
+  text-shadow: 0 0 0.7rem black;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .keys .key .title {
