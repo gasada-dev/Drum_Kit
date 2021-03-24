@@ -347,4 +347,59 @@ template {
 [hidden] {
   display: none;
 }
+
+body {
+  background: url(../src/img/background.jpg);
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.keys {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10rem;
+}
+
+.keys .key {
+  width: 7.5rem;
+  height: 6rem;
+  border: 0.4rem solid rgba(0, 0, 0, 0.692);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.keys .key .title {
+  color: #fff;
+  margin: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.keys .key .text {
+  color: #ffe600;
+  font-size: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
