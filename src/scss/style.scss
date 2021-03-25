@@ -1,11 +1,11 @@
 @import '_normalize.scss';
 
-body{
+body {
     background: url(../src/img/background.jpg);
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-.keys{
+.keys {
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@ body{
     align-items: center;
     padding: 0 10rem;
 
-    .key{
+    .key {
         cursor: default;
         width: 7.5rem;
         height: 6rem;
@@ -26,31 +26,23 @@ body{
         text-shadow: 0 0 0.5rem black;
         transition: all 0.15s;
 
-        &.playing{
+        &.playing {
             border: 0.4rem solid rgba(190, 211, 7, 0.87);
             text-shadow: 0 0 0.7rem black;
             background: rgba(0,0,0,0.6);
             transform: scale(1.2);
         }
 
-        &:hover{
-            border: 0.4rem solid rgba(190, 211, 7, 0.87);
-            text-shadow: 0 0 0.7rem black;
-            background: rgba(0,0,0,0.6);
-            transform: scale(1.2);
-        }
-
-        .title{
+        .title {
             color:#fff;
             margin: 0.5rem;
             font-size: 2.5rem;
             font-weight: 500;
         }
 
-        .sound{
+        .sound {
             color:rgb(255, 230, 0);
             font-size: 1rem;
-
         }
     }
 }
